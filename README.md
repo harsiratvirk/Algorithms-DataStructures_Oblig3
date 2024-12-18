@@ -1,13 +1,11 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/teLsEufN)
 
-# Obligatorisk Oppgave 3 i DATS2300 - Algoritmer og Datastrukturer
+# Compulsory Assignment 3 in DATS2300 - Algorithms and Data Structures
 
-Denne oppgaven er en innlevering i DATS2300 - Algoritmer og datastrukturer. Den er innlevert av følgende studenter:
-* 385516, hakau9101@oslomet.no
+This assignment is a submission in Algorithms and Data Structures (in Norwegian). 
 
 ## Oppgavebeskrivelser
-
-# Oppgave 1
+## Oppgave 1
 I oppgave 1 sjekket jeg først om den innsendte verdien var ugyldig og kastet en passende Exception hvis ja. 
 Deretter initialiserte jeg en peker p og en forelderpeker q til null. En while-løkke ble brukt for å finne 
 riktig posisjon ved å sammenligne verdien med nodene ved hjelp av en komparator. Avhengig av resultatet (mindre/større)
@@ -16,14 +14,14 @@ Når riktig plass var funnet (p==null), opprettet jeg en ny node og koblet den t
 Hvis treet var tomt, ble nye noden roten, ellers som venstre eller høyre barn av q. Til slutt oppdaterte jeg antall noder 
 og endringer, og returnerte true for en vellykket innlegging.
 
-# Oppgave 2
+## Oppgave 2
 For å komme frem til metoden, startet jeg med å håndtere ugyldige input ved å returnere 0 dersom verdien er null. 
 Deretter initialiserte jeg en peker p til rotnoden og en teller antallVerdi til 0 for å holde styr på antall forekomster. 
 Jeg brukte en while-løkke for å traversere treet, der verdien ble sammenlignet med nodenes verdier ved hjelp av en komparator. 
 Hvis verdien var mindre enn nodens verdi, flyttet jeg til venstre; hvis den var lik, økte jeg telleren og flyttet til høyre. 
 Til sist returnerte jeg telleren
 
-# Oppgave 3
+## Oppgave 3
 For metoden førstePostorden: Jeg startet med å traversere så langt ned i treet som mulig, først til venstrebarn. Hvis 
 venstre barn ikke fantes, gikk jeg til høyre. Dette sikrer at vi til slutt når en løvnode, som er den første i postorden. 
 Når jeg nådde en node uten barn, returnerte jeg den som resultat.
@@ -32,7 +30,7 @@ har et høyre barn, returneres den første noden i det høyre undertreet. Hvis p
 høyre barn, returneres forelderen. Hvis p er rotnoden, returneres null fordi det ikke er noen noder igjen i postorden.
 
 
-# Oppgave 4
+## Oppgave 4
 I oppgave 4 skulle jeg implementere postorden-traversering av et binært tre, både iterativt og rekursivt.
 Iterativ: Jeg fant først den første noden i postorden ved å kalle førstePostorden(rot) (gir startnode for traverseringen).
 Deretter opprettet jeg en while-løkke som fortsetter så lenge det finnes noder igjen å besøke. Her kalte jeg 
@@ -41,7 +39,7 @@ jeg p ved å bruke nestePostorden(p) for å navigere til den neste noden i posto
 Rekursiv: Jeg sjekket først om det er et venstrebarn. Hvis ja, kalte jeg metoden rekursivt med venstrebarnet som parameter.
 Deretter sjekket jeg for høyrebarnet på samme måte. Etter å ha besøkt begge barna, ble oppgaven utført på den nåværende noden.
 
-# Oppgave 5
+## Oppgave 5
 For metoden fjern(T verdi) sjekket jeg først om den angitte indeksen var gyldig.
 Jeg starter med å lete etter noden som skal fjernes, ved å sammenligne verdien med hver node ved hjelp av en komparator. 
 Hvis verdien er mindre, går jeg til venstre, og hvis den er større, går jeg til høyre. Hvis noden ikke finnes, returneres false.
